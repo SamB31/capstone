@@ -67,7 +67,8 @@
         }
         .artifact {
             background-color: #1e1e1e;
-            min-width: 690px;
+            max-width: 690px;
+            width: 100% !important;
             border-radius: 8px;
             padding: 1rem;
             width: calc(33% - 1rem);
@@ -101,12 +102,11 @@
         .aboutcard img {
             max-width: 500px;
             border-radius: 8px;
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 100%;
         }
         .abouttext {
-            width: 700px;
-            min-width: 500px;
+            max-width: 700px;
         }
 
     </style>
@@ -167,7 +167,7 @@
         <div class="container">
             <h2><i class="fa-solid fa-video"></i> Code Review of Artifacts</h2>
 
-            <iframe width="740" height="445" style="border: solid white 1px; border-radius: 8px;" src="https://www.youtube.com/embed/86VO7ePJsuo" 
+            <iframe  height="445" style="border: solid white 1px; border-radius: 8px; max-width: 740;" src="https://www.youtube.com/embed/86VO7ePJsuo" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
