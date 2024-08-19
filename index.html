@@ -6,6 +6,13 @@
     <title>Sam Blanton's ePortfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 2rem;
+            max-width: 740px;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
@@ -31,39 +38,38 @@
             color: #4fc3f7;
         }
         .hero {
-            background-image: url('https://github.com/SamB31/capstone/blob/main/hero1.png?raw=true');
+            background-image: url('./hero.jpg');
             background-size: cover;
             background-position: center;
             height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 60px;
+            margin-top: 50px;
         }
         .hero-content {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 2rem;
             border-radius: 8px;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+
         h1, h2 {
             color: #4fc3f7;
+            text-align: left;
+            width: 100%;
         }
         .artifacts {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 15px;
         }
         .artifact {
             background-color: #1e1e1e;
+            min-width: 690px;
             border-radius: 8px;
             padding: 1rem;
-            margin-bottom: 2rem;
             width: calc(33% - 1rem);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -83,48 +89,170 @@
             margin-right: 0.5rem;
             color: #4fc3f7;
         }
+        .aboutcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: #1e1e1e;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        .aboutcard img {
+            max-width: 500px;
+            border-radius: 8px;
+            height: 100%;
+            width: auto;
+        }
+        .abouttext {
+            width: 700px;
+            min-width: 500px;
+        }
+
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="#home"><i class="fas fa-home icon"></i>Home</a>
-        <a href="#artifacts"><i class="fas fa-folder icon"></i>Artifacts</a>
         <a href="#about"><i class="fas fa-user icon"></i>About</a>
+        <a href="#codereview"><i class="fas fa-solid fa-video icon"></i> Code Review</a>
+        <a href="#original-artifacts"><i class="fas fa-folder icon"></i>Original Artifacts</a>
+        <a href="#enhanced-artifacts"><i class="fas fa-folder icon"></i>Enhanced Artifacts</a>
+        <a href="#narratives"><i class="fas fa-folder icon"></i>Narratives</a>
+        
     </nav>
     
     <div class="hero">
         <div class="hero-content">
             <h1>Sam Blanton's ePortfolio</h1>
-            <p>Showcasing my capstone project artifacts</p>
+            <p>Showcasing my Capstone Project Artifacts</p>
         </div>
     </div>
 
-    <div class="container">
-        <section id="artifacts">
-            <h2><i class="fas fa-folder-open icon"></i>Capstone Project Artifacts</h2>
+    <section id="about">
+        <div class="container">
+            
+                <div class="aboutcard">
+                    <img src="./portrait.webp" alt="Photo of Sam Blanton">
+                    <div class="abouttext">
+                        <h2><i class="fas fa-user icon"></i>About</h2>
+                        <hr style="height:1px;min-width:120px;background-color:#4fc3f7;"> 
+                        <p>
+                            As I reflect on my journey through the Computer Science program, I recognize the significant growth in my technical skills and professional competencies. Completing coursework and developing my ePortfolio have been pivotal in shaping my career goals and preparing me for a successful career in the field.
+                        </p>
+                        <p>
+                            Throughout my studies, I have gained practical experience in collaboration, communication, and technical problem-solving. For instance, developing a full-stack web application for a local school's carpool system required me to work closely with various clients, ensuring the solution met their needs. This project, which involved technologies like Node.js, PostgreSQL, Redis, and WebSockets, highlighting my ability to create scalable, real-world applications while effectively communicating technical concepts to non-technical audiences.
+                        </p>
+                        <p>
+                            In the realm of algorithms and data structures, my work on a reinforcement learning project demonstrated my ability to implement and optimize complex algorithms. By enhancing a Q-learning algorithm to Double Q-learning, I improved both the performance and stability of the solution, showcasing my commitment to continuous learning and adaptation.
+                        </p>
+                        <p>
+                            My skills in software engineering are exemplified by the enhancement of an Out-of-Box Experience (OOBE) automation script. Originally developed in Python, I converted the script to C++ to improve performance and scalability, addressing real-world challenges like coordinate scaling, dependency management, and computer vision model conversion.
+                        </p>
+                        <p>
+                            Security has been a consistent focus in my projects. Whether securing WebSocket connections or validating inputs, I have ensured that all my solutions adhere to best practices, underscoring my commitment to developing secure and robust applications.
+                        </p>
+                        <p>
+                            The artifacts included in my ePortfolio reflect the diverse skills and knowledge I have acquired. The OOBE automation script showcases my proficiency in software engineering and my ability to enhance performance through language conversion. The reinforcement learning project illustrates my expertise in algorithms and my ability to optimize solutions for better results. Lastly, the full-stack web application for the carpool system demonstrates my ability to implement databases based on needs to create scalable, real-time solutions that address specific client needs.
+                        </p>
+                        <p>
+                            Together, these artifacts provide a comprehensive view of my capabilities as a computer scientist, highlighting my technical expertise, problem-solving skills, and dedication to continuous improvement. I am confident that the experiences and skills I have developed will serve as a strong foundation for my future career in computer science.
+                        </p>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <section id="codereview">
+        <div class="container">
+            <h2><i class="fa-solid fa-video"></i> Code Review of Artifacts</h2>
+
+            <iframe width="740" height="445" style="border: solid white 1px; border-radius: 8px;" src="https://www.youtube.com/embed/86VO7ePJsuo" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="original-artifacts">
+        <div class="container artifactparent">
+            <h2><i class="fas fa-folder-open icon"></i>Original Artifacts</h2>
+
+            <div style="background-color: #1e1e1e; padding: 15px; margin: 10px;border-radius: 8px; margin-bottom: 25px;">
+                <p>For the CS-499 Capstone Project we were asked to select one or more artifacts in the following categories.</p>
+                <ul >
+                    <li>Software Engineering and Design</li>
+                    <li>Algorithms and Data Structures</li>
+                    <li>Databases</li>
+                </ul>
+                <p>Below are the original artifacts that I selected for my project, I have given a summary of the projects, please click on the artifact to see the Github repositories.</p>
+
+            </div>
             
             <div class="artifacts">
-                <div class="artifact">
-                    <img src="/api/placeholder/400/300" alt="Artifact 1">
-                    <h3><i class="fas fa-code icon"></i>Artifact 1</h3>
-                    <p>This is artifact 1</p>
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/oobe-automation', '_blank');">
+                    <p style="margin-top: 0px;">Software Engineering and Design</p>
+                    <h3><i class="fas fa-code icon"></i>OOBE Automation</h3>
+                    <p>The Out-of-Box Experience (OOBE) automation script, initially developed in Python, was designed to automate the initial setup process of computers for Innovative Computer Solutions. This script aimed to bypass the need for manual configuration during setup by utilizing a client-server model where a microcontroller communicated with a server running the automation script. The script employed computer vision techniques to detect and interact with UI elements, significantly reducing manual intervention. However, while functional, the original implementation faced challenges related to performance and scalability, particularly in environments with diverse hardware setups.</p>
                 </div>
                 
-                <div class="artifact">
-                    <img src="/api/placeholder/400/300" alt="Artifact 2">
-                    <h3><i class="fas fa-database icon"></i>Artifact 2</h3>
-                    <p>This is artifact 2</p>
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/PirateGameAI', '_blank');">
+                    <p style="margin-top: 0px;">Algorithms and Data Structures</p>
+                    <h3><i class="fas fa-mobile-alt icon"></i>Pirate Game AI</h3>
+                    <p>The PirateGame AI project was originally developed as a reinforcement learning exercise where an agent was trained to navigate a maze and find treasure using the Q-learning algorithm. The goal was to create an AI that could learn and adapt to its environment, improving its decision-making process over time. The project was implemented in Python and served as a practical application of reinforcement learning techniques, demonstrating the agent's ability to learn optimal paths through trial and error. While effective, the original implementation had limitations in training efficiency and stability, particularly when dealing with complex maze configurations.</p>
                 </div>
                 
-                <div class="artifact">
-                    <img src="/api/placeholder/400/300" alt="Artifact 3">
-                    <h3><i class="fas fa-mobile-alt icon"></i>Artifact 3</h3>
-                    <p>This is artifact 3</p>
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/carpool-ws', '_blank');">
+                    <p style="margin-top: 0px;">Databases</p>
+                    <h3><i class="fas fa-database icon"></i>Carpool App</h3>
+                    <p>The carpool app was developed as a full-stack web application to replace a local school's walkie-talkie-driven carpool system with a more efficient, real-time digital solution. The application allowed teachers and students to stay in their classrooms while accurately tracking and managing which students needed to be sent to the carpool line. Built using modern web technologies such as Node.js, Express, PostgreSQL, Redis, and WebSockets, the app showcased the ability to handle high-frequency data requests and provided real-time updates, significantly improving the school's carpool process. However, the initial implementation faced challenges with database performance and scalability, particularly under heavy load, which necessitated further optimization.</p>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
+    <section id="enhanced-artifacts">
+        <div class="container artifactparent">
+            <h2><i class="fas fa-folder-open icon"></i>Enhanced Artifacts</h2>
+            
+            <div class="artifacts">
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/oobe-automation/tree/enhanced', '_blank');">
+                    <p style="margin-top: 0px;">Software Engineering and Design</p>
+                    <h3><i class="fas fa-code icon"></i>OOBE Automation</h3>
+                    <p>The enhancement of the Out-of-Box Experience (OOBE) automation script involved converting the original Python-based solution into a standalone C++ application. This conversion was undertaken to improve the script's performance, scalability, and alignment with industry standards. The original Python script utilized a client-server model and relied on computer vision techniques to automate the initial setup of computers, reducing manual intervention. However, it faced challenges such as performance bottlenecks and limitations in scalability, particularly when deployed across diverse hardware environments.</p>
+                    <p>During the enhancement process, several key improvements were made. The conversion to C++ not only boosted the execution speed but also allowed for more efficient memory management and reduced dependency overhead, making the solution more robust and scalable. The enhancement also included the integration of advanced features such as handling Windows scaling issues, ensuring DPI-awareness for accurate coordinate detection, and managing input simulation more precisely. Additionally, converting the machine learning model used for object detection from a Python-compatible format to one compatible with C++ (such as ONNX) ensured seamless integration and operation within the new environment. These enhancements significantly increased the script's reliability and effectiveness, making it a more powerful tool for automating the OOBE process.</p>
+                </div>
+                
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/PirateGameAI/tree/enhanced', '_blank');">
+                    <p style="margin-top: 0px;">Algorithms and Data Structures</p>
+                    <h3><i class="fas fa-mobile-alt icon"></i>Pirate Game AI</h3>
+                    <p>The enhancement of the PirateGame AI focused on upgrading the original Q-learning algorithm to Double Q-learning, significantly improving the training performance and stability of the AI agent. The original implementation involved an agent navigating a maze to find treasure using Q-learning, where the agent learned optimal paths through trial and error. However, this approach often suffered from overestimation bias, leading to suboptimal decision-making in more complex environments. To address these issues, the enhancement introduced Double Q-learning, which maintains two separate value estimates to reduce this bias and provide more reliable learning outcomes.</p>
+                    <p>The enhancement process involved deep modifications to the existing codebase, particularly in how the agent's learning process was handled. Implementing Double Q-learning required the development of dual Q-value tables, ensuring that action selection and value updates were correctly balanced between them. Additionally, efforts were made to optimize the code for better hardware performance, including configuring the training process to utilize GPU acceleration. These improvements not only made the AI more effective in navigating the maze but also provided a more stable and efficient learning environment, showcasing advanced algorithmic understanding and practical application of reinforcement learning techniques.</p>
+                </div>
+                
+                <div class="artifact" style="cursor: pointer;" onclick="window.open('https://github.com/SamB31/carpool-ws/tree/redis', '_blank');">
+                    <p style="margin-top: 0px;">Databases</p>
+                    <h3><i class="fas fa-database icon"></i>Carpool App</h3>
+                    <p>The enhancement of the Carpool app focused on improving the performance and scalability of the application by addressing issues related to database efficiency and real-time data handling. The original implementation, built using Node.js, Express, PostgreSQL, Redis, and WebSockets, replaced a local school's walkie-talkie-driven carpool system with a digital solution that allowed teachers and students to manage carpool logistics more efficiently. However, the app initially faced performance bottlenecks due to inefficient database queries, particularly under heavy load, which impacted its ability to handle high-frequency data requests smoothly.</p>
+                    <p>To enhance the app, the primary focus was on optimizing the database layer and improving the overall architecture. This involved transitioning the main data handling from PostgreSQL to Redis for in-memory NoSQL data storage, which significantly reduced latency and improved the app’s ability to manage real-time updates. Additionally, the codebase was refactored from a monolithic design into a modular architecture, making it more maintainable and scalable. This refactoring allowed for better separation of concerns, easier troubleshooting, and future enhancements. These improvements not only resolved the initial performance issues but also positioned the app to handle higher user loads and more complex operations, demonstrating advanced software engineering practices and a strong understanding of database management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="narratives">
+        <div class="container">
+            <h2><i class="fa-solid fa-clipboard"></i> Narratives</h2>
+            <div style="background-color: #1e1e1e; padding: 15px; margin: 10px;border-radius: 8px; margin-bottom: 25px;">
+                <p>Below are the links to my project narratives. These detail the process of carrying out the enhancements for each project.</p>
+                <ul >
+                    <li style="cursor: pointer; text-decoration: underline; padding: 3px; color: #4fc3f7;">Narrative on Software Engineering and Design</li>
+                    <li style="cursor: pointer; text-decoration: underline; padding: 3px; color: #4fc3f7;">Narrative on Algorithms and Data Structures</li>
+                    <li style="cursor: pointer; text-decoration: underline; padding: 3px; color: #4fc3f7;">Narrative on Databases</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
